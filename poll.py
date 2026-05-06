@@ -148,22 +148,13 @@ def handle_message(msg):
 
 def main():
     offset = load_offset()
-    print(f"Start offset: {offset}")
     updates = get_updates(offset)
-    print(f"Aantal updates: {len(updates)}")
     if not updates:
         return
 
     new_offset = offset
     for update in updates:
         new_offset = max(new_offset, update["update_id"] + 1)
-        print(f"Update {update['update_id']}: keys={list(update.keys())}")
-        msg_inspect = update.get("message")
-        if msg_inspect:
-            print(
-                f"  message text={msg_inspect.get('text')!r} "
-                f"reply_to={(msg_inspect.get('reply_to_message') or {}).get('message_id')}"
-            )
 
         cb = update.get("callback_query")
         if cb:
