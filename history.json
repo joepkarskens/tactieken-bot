@@ -14,5 +14,13 @@
   {
     "date": "2026-05-06",
     "title": "Guerrilla-projectie op gemeentehuizen of provinciehuis"
+  },
+  {
+    "id": 1778068129,
+    "date": "2026-05-06",
+    "title": "Mini-documentaire over één gezin of persoon",
+    "favorite": false,
+    "notes": [],
+    "telegram_message_id": 7
   }
 ]
