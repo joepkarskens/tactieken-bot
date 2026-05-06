@@ -150,8 +150,11 @@ def send_to_telegram(text, tactic_id):
     keyboard = [
         [
             {"text": "⭐ Favoriet", "callback_data": f"fav:{tactic_id}"},
+            {"text": "👎 Niet geschikt", "callback_data": f"down:{tactic_id}"},
+        ],
+        [
             {"text": "Volgende tactiek", "callback_data": "volgende"},
-        ]
+        ],
     ]
     payload = {
         "chat_id": TELEGRAM_CHAT_ID,
@@ -182,6 +185,7 @@ def send_new_tactic():
             "date": datetime.now().strftime("%Y-%m-%d"),
             "title": title,
             "favorite": False,
+            "downvote": False,
             "notes": [],
             "telegram_message_id": message_id,
         }

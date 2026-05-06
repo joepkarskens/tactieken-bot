@@ -55,14 +55,19 @@ def send_message(text, reply_to_message_id=None):
     requests.post(url, json=payload, timeout=15)
 
 
-def edit_keyboard(chat_id, message_id, tactic_id, is_favorite):
+def edit_keyboard(chat_id, message_id, entry):
     url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/editMessageReplyMarkup"
-    fav_label = "✅ Favoriet" if is_favorite else "⭐ Favoriet"
+    fav_label = "✅ Favoriet" if entry.get("favorite") else "⭐ Favoriet"
+    down_label = "⛔ Niet geschikt" if entry.get("downvote") else "👎 Niet geschikt"
+    tactic_id = entry["id"]
     keyboard = [
         [
             {"text": fav_label, "callback_data": f"fav:{tactic_id}"},
+            {"text": down_label, "callback_data": f"down:{tactic_id}"},
+        ],
+        [
             {"text": "Volgende tactiek", "callback_data": "volgende"},
-        ]
+        ],
     ]
     payload = {
         "chat_id": chat_id,
@@ -88,9 +93,11 @@ def handle_callback(cb):
             print(f"Fout bij genereren: {e}")
         return
 
-    if data.startswith("fav:"):
+    if data.startswith("fav:") or data.startswith("down:"):
+        kind = "fav" if data.startswith("fav:") else "down"
+        prefix_len = 4 if kind == "fav" else 5
         try:
-            tactic_id = int(data[4:])
+            tactic_id = int(data[prefix_len:])
         except ValueError:
             answer_callback(cb["id"])
             return
@@ -101,16 +108,25 @@ def handle_callback(cb):
             answer_callback(cb["id"], text="Tactiek niet gevonden")
             return
 
-        target["favorite"] = not target.get("favorite", False)
+        if kind == "fav":
+            target["favorite"] = not target.get("favorite", False)
+            if target["favorite"]:
+                target["downvote"] = False
+            state = "favoriet" if target["favorite"] else "niet meer favoriet"
+        else:
+            target["downvote"] = not target.get("downvote", False)
+            if target["downvote"]:
+                target["favorite"] = False
+            state = "niet geschikt" if target["downvote"] else "weer neutraal"
+
         save_history(history)
 
         msg = cb.get("message", {})
         chat_id = msg.get("chat", {}).get("id")
         message_id = msg.get("message_id")
         if chat_id and message_id:
-            edit_keyboard(chat_id, message_id, tactic_id, target["favorite"])
+            edit_keyboard(chat_id, message_id, target)
 
-        state = "favoriet" if target["favorite"] else "niet meer favoriet"
         answer_callback(cb["id"], text=f"Gemarkeerd als {state}")
         return
 
