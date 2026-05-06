@@ -46,9 +46,24 @@ def answer_callback(cb_id, text=None):
     requests.post(url, json=payload, timeout=15)
 
 
+def get_webhook_info():
+    url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/getWebhookInfo"
+    r = requests.get(url, timeout=15)
+    return r.json()
+
+
 def main():
+    info = get_webhook_info()
+    print(f"WebhookInfo: {info}")
+    webhook_url = info.get("result", {}).get("url", "")
+    if webhook_url:
+        print(f"WAARSCHUWING: Webhook actief op {webhook_url}. Callbacks gaan daarheen, niet naar getUpdates.")
+        print("Verwijder met: curl 'https://api.telegram.org/bot<TOKEN>/deleteWebhook'")
+
     offset = load_offset()
+    print(f"Start offset: {offset}")
     updates = get_updates(offset)
+    print(f"Aantal updates: {len(updates)}")
     if not updates:
         return
 
