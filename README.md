@@ -5,8 +5,32 @@ Telegram-bot die elke dag om 12:30 (Nederlandse tijd) een nieuwe campagnetactiek
 ## Hoe het werkt
 
 - Elke dag om 12:30 NL-tijd genereert de bot een nieuwe tactiek via de Anthropic API en stuurt 'm naar Telegram.
-- Onder elk bericht staat een **Volgende tactiek**-knop. Druk erop om binnen ongeveer 5 minuten een nieuwe tactiek te krijgen (de polling-workflow draait elke 5 minuten).
+- Onder elk bericht staan twee knoppen:
+  - **⭐ Favoriet** - markeert de tactiek als favoriet in `history.json` (klik nogmaals om te ontmarkeren). De knop wordt ✅ na markeren.
+  - **Volgende tactiek** - vraagt direct een nieuwe tactiek aan (verschijnt binnen ~5 minuten via de polling-workflow).
+- **Notitie toevoegen:** beantwoord het bot-bericht met een tekst-reply. De tekst wordt opgeslagen in `notes` van die tactiek-entry.
 - Eerder verstuurde tactieken staan in `history.json`, zodat de bot zichzelf niet herhaalt.
+
+## Database voor Claude Cowork
+
+`history.json` is je database. Lees 'm in een Claude Cowork-project via deze URL:
+
+```
+https://raw.githubusercontent.com/joepkarskens/tactieken-bot/main/history.json
+```
+
+Schema per entry:
+
+```json
+{
+  "id": 1714998000,
+  "date": "2026-05-06",
+  "title": "Naam van de tactiek",
+  "favorite": true,
+  "notes": [{ "date": "2026-05-06", "text": "Korte notitie" }],
+  "telegram_message_id": 12345
+}
+```
 
 ## Handmatig een nieuwe tactiek triggeren
 

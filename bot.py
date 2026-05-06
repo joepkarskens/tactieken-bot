@@ -145,17 +145,19 @@ def md_to_telegram_v2(text):
     return text
 
 
-def send_to_telegram(text):
+def send_to_telegram(text, tactic_id):
     url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
+    keyboard = [
+        [
+            {"text": "⭐ Favoriet", "callback_data": f"fav:{tactic_id}"},
+            {"text": "Volgende tactiek", "callback_data": "volgende"},
+        ]
+    ]
     payload = {
         "chat_id": TELEGRAM_CHAT_ID,
         "text": md_to_telegram_v2(text),
         "parse_mode": "MarkdownV2",
-        "reply_markup": {
-            "inline_keyboard": [
-                [{"text": "Volgende tactiek", "callback_data": "volgende"}]
-            ]
-        },
+        "reply_markup": {"inline_keyboard": keyboard},
     }
     r = requests.post(url, json=payload, timeout=30)
     if not r.ok:
@@ -164,16 +166,28 @@ def send_to_telegram(text):
         payload.pop("parse_mode", None)
         r = requests.post(url, json=payload, timeout=30)
     r.raise_for_status()
+    return r.json()
 
 
 def send_new_tactic():
     history = load_history()
     tactic = generate_tactic(history)
-    send_to_telegram(tactic)
+    tactic_id = int(datetime.now().timestamp())
+    response = send_to_telegram(tactic, tactic_id)
+    message_id = response.get("result", {}).get("message_id")
     title = extract_title(tactic)
-    history.append({"date": datetime.now().strftime("%Y-%m-%d"), "title": title})
+    history.append(
+        {
+            "id": tactic_id,
+            "date": datetime.now().strftime("%Y-%m-%d"),
+            "title": title,
+            "favorite": False,
+            "notes": [],
+            "telegram_message_id": message_id,
+        }
+    )
     save_history(history)
-    print(f"Verstuurd: {title}")
+    print(f"Verstuurd: {title} (id={tactic_id}, message_id={message_id})")
 
 
 if __name__ == "__main__":
