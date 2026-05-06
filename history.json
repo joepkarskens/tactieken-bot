@@ -20,7 +20,12 @@
     "date": "2026-05-06",
     "title": "Mini-documentaire over één gezin of persoon",
     "favorite": true,
-    "notes": [],
+    "notes": [
+      {
+        "date": "2026-05-06",
+        "text": "Test notitie 2 nu met reply"
+      }
+    ],
     "telegram_message_id": 7
   }
 ]
