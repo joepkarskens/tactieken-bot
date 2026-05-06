@@ -13,6 +13,12 @@ Telegram-bot die elke dag om 12:30 (Nederlandse tijd) een nieuwe campagnetactiek
 - **Notitie toevoegen:** beantwoord het bot-bericht met een tekst-reply. De tekst wordt opgeslagen in `notes` van die tactiek-entry.
 - Eerder verstuurde tactieken staan in `history.json`, zodat de bot zichzelf niet herhaalt.
 
+## Hoe favorieten en downvotes het model sturen
+
+- **Downvotes** worden actief als grens gebruikt: tactieken van hetzelfde type worden sterk vermeden.
+- **Favorieten** worden als zachte inspiratie meegegeven, niet als blueprint. Het model wordt expliciet aangespoord om te varieren en niet te overfitten op je voorkeuren.
+- **Wildcard-modus:** met ~33% kans (alleen als je al voorkeuren hebt gemarkeerd) negeert het model je favorieten en genereert juist iets buiten je comfort zone, om creatieve diversiteit te behouden.
+
 ## Database voor Claude Cowork
 
 `history.json` is je database. Lees 'm in een Claude Cowork-project via deze URL:

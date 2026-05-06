@@ -1,6 +1,7 @@
 """Genereert een dagelijkse campagnetactiek en stuurt deze naar Telegram."""
 import json
 import os
+import random
 import re
 import sys
 from datetime import datetime
@@ -86,17 +87,58 @@ def save_history(history):
     )
 
 
-def generate_tactic(history):
-    client = Anthropic(api_key=ANTHROPIC_API_KEY)
+WILDCARD_PROBABILITY = 0.33
+
+
+def build_user_prompt(history):
     avoid_titles = [h["title"] for h in history]
+    favorites = [h["title"] for h in history if h.get("favorite")]
+    downvotes = [h["title"] for h in history if h.get("downvote")]
+
+    sections = []
+
     if avoid_titles:
-        avoid_block = (
-            "Vermijd herhaling of variatie van deze eerder verstuurde tactieken:\n- "
+        sections.append(
+            "Eerder verstuurde tactieken (vermijd letterlijke herhaling):\n- "
             + "\n- ".join(avoid_titles)
         )
+
+    if downvotes:
+        sections.append(
+            "Deze tactieken zijn als 'niet geschikt' gemarkeerd. Vermijd sterk dit soort denkrichting:\n- "
+            + "\n- ".join(downvotes)
+        )
+
+    if favorites:
+        sections.append(
+            "Deze tactieken landden goed (zachte inspiratie, GEEN blueprint - varieer in soort):\n- "
+            + "\n- ".join(favorites)
+        )
+
+    wildcard_active = (favorites or downvotes) and random.random() < WILDCARD_PROBABILITY
+    if wildcard_active:
+        sections.append(
+            "WILDCARD-MODUS: Genereer juist een tactiek die buiten de eerdere voorkeuren ligt. "
+            "Onverwacht qua soort of medium, maar wel passend bij DGZ's drie pijlers. "
+            "Negeer de favorieten als sturing, gebruik alleen de downvotes als grenzen."
+        )
     else:
-        avoid_block = "Geen eerder verstuurde tactieken om te vermijden."
-    user_prompt = f"{avoid_block}\n\nGenereer 1 nieuwe tactiek, exact in het format hierboven."
+        sections.append(
+            "Blijf vooral creatief en varieer in soort (visueel, juridisch, journalistiek, symbolisch, fysiek). "
+            "Behandel de favorieten als losse signalen, niet als kader. "
+            "De beste tactiek kan ook compleet buiten de bestaande voorkeuren liggen."
+        )
+
+    sections.append("Genereer nu 1 nieuwe tactiek, exact in het format hierboven.")
+
+    return "\n\n".join(sections), wildcard_active
+
+
+def generate_tactic(history):
+    client = Anthropic(api_key=ANTHROPIC_API_KEY)
+    user_prompt, wildcard_active = build_user_prompt(history)
+    if wildcard_active:
+        print("Wildcard-modus actief")
 
     response = client.messages.create(
         model="claude-sonnet-4-5",
