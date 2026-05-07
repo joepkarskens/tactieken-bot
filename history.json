@@ -43,7 +43,12 @@
     "title": "Interactieve popup-expositie op drukke plekken",
     "favorite": false,
     "downvote": false,
-    "notes": [],
+    "notes": [
+      {
+        "date": "2026-05-07",
+        "text": "Moeten we doen bij luminate"
+      }
+    ],
     "telegram_message_id": 12
   }
 ]
