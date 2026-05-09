@@ -163,22 +163,39 @@ def handle_message(msg):
 
 
 def main():
+    info_url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/getWebhookInfo"
+    info = requests.get(info_url, timeout=15).json()
+    print(f"WebhookInfo: {info}")
+
     offset = load_offset()
+    print(f"Start offset: {offset}")
+
+    fresh_url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/getUpdates"
+    fresh = requests.get(fresh_url, params={"timeout": 0}, timeout=30).json()
+    print(f"Alle pending updates (zonder offset/filter): {len(fresh.get('result', []))}")
+    for u in fresh.get("result", [])[-5:]:
+        print(f"  raw update {u.get('update_id')}: keys={list(u.keys())}")
+
     updates = get_updates(offset)
+    print(f"Aantal updates met offset+filter: {len(updates)}")
     if not updates:
         return
 
     new_offset = offset
     for update in updates:
         new_offset = max(new_offset, update["update_id"] + 1)
-
+        print(f"Update {update['update_id']}: keys={list(update.keys())}")
         cb = update.get("callback_query")
         if cb:
+            print(f"  cb data={cb.get('data')!r}")
             handle_callback(cb)
             continue
-
         msg = update.get("message")
         if msg:
+            print(
+                f"  msg text={msg.get('text')!r} "
+                f"reply_to={(msg.get('reply_to_message') or {}).get('message_id')}"
+            )
             handle_message(msg)
 
     save_offset(new_offset)
