@@ -55,9 +55,18 @@
     "id": 1778235992,
     "date": "2026-05-08",
     "title": "Fysieke \"hoopzaad-zakjes\" massaal verspreiden",
-    "favorite": false,
+    "favorite": true,
     "downvote": false,
     "notes": [],
     "telegram_message_id": 15
+  },
+  {
+    "id": 1778346320,
+    "date": "2026-05-09",
+    "title": "Fotoreportage in lokale huis-aan-huisblad",
+    "favorite": false,
+    "downvote": false,
+    "notes": [],
+    "telegram_message_id": 16
   }
 ]
