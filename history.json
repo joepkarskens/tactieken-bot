@@ -129,7 +129,12 @@
     "title": "Omgekeerde lobbybrief naar wethouders en gedeputeerden",
     "favorite": false,
     "downvote": false,
-    "notes": [],
+    "notes": [
+      {
+        "date": "2026-05-21",
+        "text": "Leuk!"
+      }
+    ],
     "telegram_message_id": 23
   }
 ]
