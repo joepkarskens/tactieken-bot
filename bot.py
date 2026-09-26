@@ -51,7 +51,24 @@ NEDERLANDSE WERKELIJKHEID (check elke tactiek hierop, een buitenlandse truc die 
 - Privacy (AVG): geen bel- of mailbestanden van kiezers, niet-stemmers of burgers. De achterban benadert alleen mensen die ze zelf kennen.
 - Zienswijzen en consultaties worden gewogen op argumenten, niet geteld. Massa-inbreng werkt via pers en politiek, dus combineer aantallen met sterke inhoud en publiciteit.
 - Grote beursfondsen als Shell en Unilever zijn Brits of Engels bestuurd en vergaderen in Londen. Check of de aandeelhoudersroute bij het gekozen bedrijf echt bestaat.
-- Elke tactiek heeft een concrete eis en een concreet beslismoment. Leg uit waarom de beslisser door deze actie echt kan bewegen.
+- Wie beslist: in de gemeente besluit het college (burgemeester en wethouders) over uitvoering, contracten en aanbestedingen; de raad over begroting, kaders, verordeningen en moties. In de provincie idem Gedeputeerde Staten tegenover Provinciale Staten. Jeugdzorg wordt vaak regionaal ingekocht. Het COA regelt asielopvang, niet de gemeenteraad.
+- Een Europees burgerinitiatief verplicht de Commissie alleen tot een reactie, niet tot wetgeving.
+- Elke tactiek heeft een concrete eis en een concreet beslismoment.
+
+GEREEDSCHAPSKIST (formele routes waarvan zeker is dat ze bestaan):
+- Inspreken bij een raads- of Statencommissie, en een raadslid vragen een motie of amendement in te dienen.
+- Burgerinitiatief bij de Tweede Kamer (40.000 handtekeningen) of een gemeentelijk burgerinitiatief waar de verordening dat regelt.
+- Woo-verzoek om documenten boven water te krijgen (reken op maanden).
+- Klacht bij de Nationale ombudsman of gemeentelijke ombudsman over hoe een overheid handelt.
+- Reageren op een internetconsultatie of zienswijze indienen bij een ruimtelijk plan.
+- Strategische rechtszaak via PILP of Bureau Brandeis (duurt lang, levert vooral publiciteit en precedent).
+- Peiling via I&O Research of Ipsos I&O.
+- Vragen stellen op de aandeelhoudersvergadering van een Nederlands beursfonds (Ahold Delhaize, ING, ABN AMRO, ASML, Heineken, Philips), eventueel met VBDO.
+- Deelnemers van ABP of PFZW laten mailen naar hun eigen pensioenfonds over beleggingen.
+- Demonstratie met kennisgeving bij de gemeente.
+- Melding bij een toezichthouder (IGJ, NZa, ACM, AP, Commissariaat voor de Media) over iets wat onder hun mandaat valt.
+Informele hefbomen mogen altijd: publiciteit, onderzoek en onthulling, crowdfunding, advertenties buiten Meta en Google, coalities, druk op reputatie van bedrijven, adverteerders en sponsors.
+Gebruik GEEN formele procedure buiten deze lijst tenzij je 100 procent zeker weet dat hij bestaat en werkt zoals je beschrijft. Twijfel je, kies dan een informele hefboom. Een eenvoudige tactiek die klopt wint van een slimme die niet bestaat. Leg uit waarom de beslisser door deze actie echt kan bewegen.
 
 Drie campagnepijlers:
 
@@ -204,7 +221,7 @@ def generate_tactic(history, case):
         print("Wildcard-modus actief")
 
     response = client.messages.create(
-        model="claude-sonnet-4-5",
+        model="claude-sonnet-5",
         max_tokens=1500,
         system=SYSTEM_PROMPT,
         messages=[{"role": "user", "content": user_prompt}],
