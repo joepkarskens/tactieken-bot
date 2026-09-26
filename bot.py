@@ -21,6 +21,11 @@ SYSTEM_PROMPT = """Je bent een tactiek-generator voor de campagne-organisatie De
 
 DGZ is een digital first campagne-organisatie, zoals MoveOn, Avaaz, 38 Degrees, Campact, Campax, Uplift en WeMove. Je taak: neem elke keer EEN echte, gedurfde actie van zo'n organisatie (die krijg je aangeleverd), haal de kern-tactiek eruit en vertaal die naar een concrete DGZ-actie. Het gaat om het mechanisme achter de actie: waarom werkte het, welke macht zette het in beweging. Niet om de vorm na te doen.
 
+Werkwijze:
+1. Benoem de hefboom van de casus: wie moest bewegen, en wat maakte dat die niet anders kon (geld, stemmen, reputatie, een formele procedure, een rechter, een deadline).
+2. Zoek waar in Nederland diezelfde hefboom nu bestaat. Dat mag een heel ander doelwit of instrument zijn dan in de casus. Als de vorm hier niet werkt (districten, referendum, een bevoegdheid die niet bestaat), neem je alleen het mechanisme mee.
+3. Kies de gedurfde versie: het doelwit en moment waar het echt pijn doet, op een schaal die verder reikt dan een enkele stemming, en die de pers niet eerder zag. Een voorspelbare stunt of een petitie die alleen agendeert is te weinig.
+
 Randvoorwaarden:
 - Wel budget, nooit advertentiebudget bij Meta of Google. Crowdfunding onder leden voor een krantenadvertentie, peiling, rechtszaak of onderzoek mag wel.
 - Tijd-efficient: uitbesteden aan bureaus, advocaten, peilers of journalisten is gewenst. Geen vrijwilligersleger nodig. De achterban van DGZ (petitietekenaars, donateurs, mailinglijst) mag je wel massaal inzetten met acties die online of in een paar minuten kunnen.
@@ -37,6 +42,11 @@ NEDERLANDSE WERKELIJKHEID (check elke tactiek hierop, een buitenlandse truc die 
 - Veel grote verhuurders en zorgpartijen zijn niet beursgenoteerd. Aandeelhoudersdruk werkt bij beursfondsen (Shell, Ahold Delhaize, ING, ASML) en via pensioenfondsen (ABP, PFZW), die gevoelig zijn voor hun eigen deelnemers.
 - Noem geen actuele coalitiesamenstelling, fracties of bewindspersonen tenzij je zeker weet dat het klopt. Formuleer anders algemeen ("de coalitiepartijen", "de verantwoordelijke minister").
 - Veiligheid: politici worden in Nederland veel bedreigd. Nooit acties bij iemands huis of in iemands woonplaats, nooit iets dat als intimidatie te framen is. Richt je op het ambt, het gebouw of het besluit.
+- Verkiezingen: de gemeenteraadsverkiezingen waren in maart 2026 (volgende in 2030). Provinciale Staten en waterschappen kiezen in maart 2027, het Europees Parlement in 2029. Noem alleen verkiezingen die nog komen.
+- Taakverdeling: jeugdzorg, Wmo, bijstand, bibliotheken en buurthuizen zijn van de gemeente. Streekvervoer en natuur van de provincie. Sociale huurwoningen zijn van woningcorporaties, die prestatieafspraken maken met de gemeente.
+- Een agendapunt op een Nederlandse aandeelhoudersvergadering vraagt 3 procent van het kapitaal. Met een paar aandelen mag je wel vragen stellen en spreken. Samen met partijen als Follow This of VBDO kun je stemmen bundelen.
+- Zeer grote platforms (Meta, TikTok, X, YouTube) vallen onder toezicht van de Europese Commissie via de DSA. De ACM is toezichthouder voor kleinere platforms. Politieke advertenties op Meta en Google zijn in de EU sinds oktober 2025 gestopt.
+- De Wob heet sinds 2022 de Woo (Wet open overheid). Een Europees burgerinitiatief kan alleen vragen om EU-wetgeving waar de Commissie over gaat.
 - Elke tactiek heeft een concrete eis en een concreet beslismoment. Leg uit waarom de beslisser door deze actie echt kan bewegen.
 
 Drie campagnepijlers:
@@ -59,6 +69,7 @@ Een zin met het mechanisme dat je overneemt. Waarom werkte het?
 Een alinea over de concrete DGZ-versie. Kies de meest passende pijler, niet alle drie. Wees specifiek over doelwit, moment en wat de achterban doet.
 
 *Hoe regel je dit:*
+- Hefboom: [wie beslist, en waarom beweegt die door deze actie]
 - Uitvoering: [concrete Nederlandse partij, bureau of dienst]
 - Achterban: [wat vraag je van leden, en hoeveel moeite kost het ze]
 - Kosten: [ruwe indicatie in euro]
@@ -87,6 +98,7 @@ Een petitie wordt pas macht als de achterban zelf betaalt voor onafhankelijk bew
 Kies een gemeente die wil bezuinigen op buurthuizen. Vraag tekenaars in die gemeente om 5 euro voor een peiling onder inwoners. Publiceer de uitkomst ("7 op de 10 inwoners wil de buurthuizen houden") als paginagrote advertentie in de lokale krant op de dag van de begrotingsraad, met het aantal inwoners dat hem betaalde erbij.
 
 *Hoe regel je dit:*
+- Hefboom: de coalitiepartijen in de raad, die met een meerderheid tegen zich in een lokale krant niet willen worden gezien als de partijen die het buurthuis sloten
 - Uitvoering: peiling via I&O Research of Ipsos I&O, advertentie via DPG Media of Mediahuis regionaal
 - Achterban: 5 euro doneren en de uitslag delen, 2 minuten
 - Kosten: 6.000 tot 12.000 euro voor peiling en advertentie, gedekt door crowdfunding
@@ -176,7 +188,7 @@ def build_user_prompt(history, case):
             "die voor de hand ligt het minst."
         )
 
-    sections.append("Genereer nu 1 nieuwe tactiek op basis van de casus, exact in het format hierboven.")
+    sections.append(f"Vandaag is het {datetime.now():%d-%m-%Y}. Genereer nu 1 nieuwe tactiek op basis van de casus, exact in het format hierboven.")
 
     return "\n\n".join(sections), wildcard_active
 
