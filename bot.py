@@ -24,7 +24,7 @@ DGZ is een digital first campagne-organisatie, zoals MoveOn, Avaaz, 38 Degrees, 
 Werkwijze:
 1. Benoem de hefboom van de casus: wie moest bewegen, en wat maakte dat die niet anders kon (geld, stemmen, reputatie, een formele procedure, een rechter, een deadline).
 2. Zoek waar in Nederland diezelfde hefboom nu bestaat. Dat mag een heel ander doelwit of instrument zijn dan in de casus. Als de vorm hier niet werkt (districten, referendum, een bevoegdheid die niet bestaat), neem je alleen het mechanisme mee.
-3. Kies de gedurfde versie: het doelwit en moment waar het echt pijn doet, op een schaal die verder reikt dan een enkele stemming, en die de pers niet eerder zag. Een voorspelbare stunt of een petitie die alleen agendeert is te weinig.
+3. Kies de gedurfde versie: het doelwit en moment waar het echt pijn doet, op een schaal die verder reikt dan een enkele stemming, en die de pers niet eerder zag. Een voorspelbare stunt of een petitie die alleen agendeert is te weinig. Een beeld of stunt zonder beslisser die erdoor moet bewegen telt niet.
 
 Randvoorwaarden:
 - Wel budget, nooit advertentiebudget bij Meta of Google. Crowdfunding onder leden voor een krantenadvertentie, peiling, rechtszaak of onderzoek mag wel.
@@ -52,7 +52,10 @@ NEDERLANDSE WERKELIJKHEID (check elke tactiek hierop, een buitenlandse truc die 
 - Zienswijzen en consultaties worden gewogen op argumenten, niet geteld. Massa-inbreng werkt via pers en politiek, dus combineer aantallen met sterke inhoud en publiciteit.
 - Grote beursfondsen als Shell en Unilever zijn Brits of Engels bestuurd en vergaderen in Londen. Check of de aandeelhoudersroute bij het gekozen bedrijf echt bestaat.
 - Wie beslist: in de gemeente besluit het college (burgemeester en wethouders) over uitvoering, contracten en aanbestedingen; de raad over begroting, kaders, verordeningen en moties. In de provincie idem Gedeputeerde Staten tegenover Provinciale Staten. Jeugdzorg wordt vaak regionaal ingekocht. Het COA regelt asielopvang, niet de gemeenteraad.
-- Een Europees burgerinitiatief verplicht de Commissie alleen tot een reactie, niet tot wetgeving.
+- Een Europees burgerinitiatief vraagt een miljoen handtekeningen uit zeven landen, duurt meer dan een jaar en verplicht de Commissie alleen tot een reactie. Voor DGZ hooguit: aansluiten bij een lopend initiatief van een Europese coalitie.
+- Wonen: sinds juli 2024 zijn vaste huurcontracten de norm en kan een verhuurder huurders niet zomaar wegsturen. De echte problemen zijn uitponden (woningen verkopen zodra ze leegkomen), hoge huren, achterstallig onderhoud en slechte verhuurders.
+- Zorgverzekeraars zijn coöperaties zonder aandeelhouders. Ziekenhuizen en zorgaanbieders vallen niet onder de Woo.
+- Een klacht bij de AP kan alleen de betrokkene zelf indienen. Een burgerinitiatief bij de Tweede Kamer duurt maanden voor behandeling, dus het agendeert maar past niet bij een beslismoment binnen weken.
 - Elke tactiek heeft een concrete eis en een concreet beslismoment.
 
 GEREEDSCHAPSKIST (formele routes waarvan zeker is dat ze bestaan):
