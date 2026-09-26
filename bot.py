@@ -27,6 +27,18 @@ Randvoorwaarden:
 - Kies de tactiek die bij de casus hoort. Het sturen van een fysiek object of pakketje naar politici is VERBODEN, tenzij de casus letterlijk daarover gaat.
 - Denk ook aan andere doelwitten dan politici: bedrijven, aandeelhouders, adverteerders, toezichthouders, rechters, media, sponsors, pensioenfondsen, kiezers.
 
+NEDERLANDSE WERKELIJKHEID (check elke tactiek hierop, een buitenlandse truc die hier niet werkt is waardeloos):
+- Nederland heeft evenredige vertegenwoordiging met partijlijsten, geen districten. Strategisch stemmen per district of een individueel Kamerlid of raadslid "wegstemmen" werkt hier niet. Vertaal zo'n casus naar wat hier wel werkt: voorkeurstemmen, partijcongressen en ledenraadplegingen, coalitie- en collegeonderhandelingen, fractiediscipline.
+- Er is geen kiezersregistratie. Iedereen in de BRP krijgt automatisch een stempas.
+- De rechter mag wetten niet aan de Grondwet toetsen (artikel 120). Wel aan verdragen zoals het EVRM, en besluiten van overheden zijn aan te vechten via bezwaar, beroep of een klacht bij de Nationale ombudsman. Strategische rechtszaken lopen via partijen als PILP of Bureau Brandeis.
+- Landelijk bestaat geen referendum meer. Wel het burgerinitiatief (40.000 handtekeningen zet een onderwerp op de agenda van de Tweede Kamer), het Europees burgerinitiatief, en in sommige gemeenten een referendum- of initiatiefverordening.
+- Demonstreren vraagt alleen een kennisgeving bij de gemeente, geen vergunning.
+- Toezichthouders hebben een smal mandaat: de ACM kijkt naar mededinging, het Commissariaat voor de Media naar mediaregels, de AP naar privacy. Richt je op de toezichthouder die echt over de vraag gaat.
+- Veel grote verhuurders en zorgpartijen zijn niet beursgenoteerd. Aandeelhoudersdruk werkt bij beursfondsen (Shell, Ahold Delhaize, ING, ASML) en via pensioenfondsen (ABP, PFZW), die gevoelig zijn voor hun eigen deelnemers.
+- Noem geen actuele coalitiesamenstelling, fracties of bewindspersonen tenzij je zeker weet dat het klopt. Formuleer anders algemeen ("de coalitiepartijen", "de verantwoordelijke minister").
+- Veiligheid: politici worden in Nederland veel bedreigd. Nooit acties bij iemands huis of in iemands woonplaats, nooit iets dat als intimidatie te framen is. Richt je op het ambt, het gebouw of het besluit.
+- Elke tactiek heeft een concrete eis en een concreet beslismoment. Leg uit waarom de beslisser door deze actie echt kan bewegen.
+
 Drie campagnepijlers:
 
 1. Tegen extreemrechts en de rol van neoliberale partijen die extreemrechts mogelijk maken of enabelen. Landelijk niveau.
@@ -79,7 +91,7 @@ Kies een gemeente die wil bezuinigen op buurthuizen. Vraag tekenaars in die geme
 - Achterban: 5 euro doneren en de uitslag delen, 2 minuten
 - Kosten: 6.000 tot 12.000 euro voor peiling en advertentie, gedekt door crowdfunding
 - Doorlooptijd: 4 tot 6 weken
-- Risico: peiling valt tegen. Stel de vraag eerlijk en publiceer alleen als de uitslag de boodschap draagt; anders gebruik je hem intern.
+- Risico: de uitslag valt tegen. Laat het bureau de vraag neutraal formuleren en publiceer de uitslag hoe dan ook, anders is je bewijs niets waard. Kies daarom vooraf een voorziening waar de steun aantoonbaar breed is.
 
 Output ALLEEN de tactiek, geen inleidende of afsluitende zinnen, geen kopjes als "Tactiek:" ervoor."""
 
