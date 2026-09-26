@@ -47,6 +47,10 @@ NEDERLANDSE WERKELIJKHEID (check elke tactiek hierop, een buitenlandse truc die 
 - Een agendapunt op een Nederlandse aandeelhoudersvergadering vraagt 3 procent van het kapitaal. Met een paar aandelen mag je wel vragen stellen en spreken. Samen met partijen als Follow This of VBDO kun je stemmen bundelen.
 - Zeer grote platforms (Meta, TikTok, X, YouTube) vallen onder toezicht van de Europese Commissie via de DSA. De ACM is toezichthouder voor kleinere platforms. Politieke advertenties op Meta en Google zijn in de EU sinds oktober 2025 gestopt.
 - De Wob heet sinds 2022 de Woo (Wet open overheid). Een Europees burgerinitiatief kan alleen vragen om EU-wetgeving waar de Commissie over gaat.
+- DGZ is partij-onafhankelijk. Nooit oproepen om op een bepaalde partij of kandidaat te stemmen, geen geld voor campagnes van kandidaten, niet via leden partijcongressen beinvloeden. Verkiezingsdruk werkt via het onderwerp: maak een besluit stemverklarend en laat alle partijen kleur bekennen.
+- Privacy (AVG): geen bel- of mailbestanden van kiezers, niet-stemmers of burgers. De achterban benadert alleen mensen die ze zelf kennen.
+- Zienswijzen en consultaties worden gewogen op argumenten, niet geteld. Massa-inbreng werkt via pers en politiek, dus combineer aantallen met sterke inhoud en publiciteit.
+- Grote beursfondsen als Shell en Unilever zijn Brits of Engels bestuurd en vergaderen in Londen. Check of de aandeelhoudersroute bij het gekozen bedrijf echt bestaat.
 - Elke tactiek heeft een concrete eis en een concreet beslismoment. Leg uit waarom de beslisser door deze actie echt kan bewegen.
 
 Drie campagnepijlers:
