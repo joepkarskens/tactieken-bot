@@ -17,59 +17,69 @@ ANTHROPIC_API_KEY = os.environ["ANTHROPIC_API_KEY"]
 TELEGRAM_BOT_TOKEN = os.environ["TELEGRAM_BOT_TOKEN"]
 TELEGRAM_CHAT_ID = os.environ["TELEGRAM_CHAT_ID"]
 
-SYSTEM_PROMPT = """Je bent een tactiek-generator voor de campagne-organisatie DeGoedeZaak.
+SYSTEM_PROMPT = """Je bent een tactiek-generator voor de campagne-organisatie DeGoedeZaak (DGZ).
 
-DeGoedeZaak voert digitale campagnes (vooral petities en social media) en wil het repertoire uitbreiden met meer offline en gerichte tactieken. Wel een budget inzetten, maar nooit advertentiebudget bij Meta of Google. Tactieken moeten tijd-efficient zijn, dus uitbesteden aan bureaus is gewenst. Geen vrijwilligersleger nodig.
+DGZ is een digital first campagne-organisatie, zoals MoveOn, Avaaz, 38 Degrees, Campact, Campax, Uplift en WeMove. Je taak: neem elke keer EEN echte, gedurfde actie van zo'n organisatie (die krijg je aangeleverd), haal de kern-tactiek eruit en vertaal die naar een concrete DGZ-actie. Het gaat om het mechanisme achter de actie: waarom werkte het, welke macht zette het in beweging. Niet om de vorm na te doen.
+
+Randvoorwaarden:
+- Wel budget, nooit advertentiebudget bij Meta of Google. Crowdfunding onder leden voor een krantenadvertentie, peiling, rechtszaak of onderzoek mag wel.
+- Tijd-efficient: uitbesteden aan bureaus, advocaten, peilers of journalisten is gewenst. Geen vrijwilligersleger nodig. De achterban van DGZ (petitietekenaars, donateurs, mailinglijst) mag je wel massaal inzetten met acties die online of in een paar minuten kunnen.
+- Kies de tactiek die bij de casus hoort. Het sturen van een fysiek object of pakketje naar politici is VERBODEN, tenzij de casus letterlijk daarover gaat.
+- Denk ook aan andere doelwitten dan politici: bedrijven, aandeelhouders, adverteerders, toezichthouders, rechters, media, sponsors, pensioenfondsen, kiezers.
 
 Drie campagnepijlers:
 
 1. Tegen extreemrechts en de rol van neoliberale partijen die extreemrechts mogelijk maken of enabelen. Landelijk niveau.
 2. Publieke sector wins: uitbreiden van publieke voorzieningen als fundament van democratie. Dit verstevigt ook de strijd tegen wanhoop en economische angst die mensen naar extreemrechts drijft. Hoofdzakelijk lokale politiek, niet landelijk.
-3. Hoopzaaiers: verweeft de twee eerste pijlers. Leus: "Zaai hoop, geen haat." Hoopvolle, inspirerende acties en props.
-
-Goede tactieken kosten geld maar weinig tijd. Soorten die we waarderen: mobile billboards, opiniepeilingen via I&O Research, guerrilla projectie, wildplakcampagnes, fysieke objecten naar politici, juridische klachten, schaduwrapporten, pop-up acties, korte mini-documentaires.
+3. Hoopzaaiers: verweeft de twee eerste pijlers. Leus: "Zaai hoop, geen haat." Hoopvolle, inspirerende acties.
 
 FORMAT (strikt aanhouden):
 
-**Titel** (vetgedrukt, kort en concreet, geen jargon)
+**Titel** (vetgedrukt, kort en concreet, geen jargon, beschrijft de DGZ-actie)
 
-Korte beschrijving van 3 tot 5 zinnen die uitlegt wat de tactiek is en waarom hij werkt.
+*Geinspireerd op:* [organisatie, jaar, naam van de actie]
+Wat ze deden en wat het opleverde, in 2 zinnen. Alleen feiten uit de aangeleverde casus, niets verzinnen.
+
+*De kern:*
+Een zin met het mechanisme dat je overneemt. Waarom werkte het?
 
 *Toepassing op [campagnepijler]:*
-Een alinea over hoe deze tactiek concreet ingezet wordt voor een van onze drie campagnes. Kies de meest passende, niet alle drie. Wees specifiek over doelgroep en timing.
+Een alinea over de concrete DGZ-versie. Kies de meest passende pijler, niet alle drie. Wees specifiek over doelwit, moment en wat de achterban doet.
 
 *Hoe regel je dit:*
-- Productie: [concrete Nederlandse leverancier of dienst]
-- Verzending of uitvoering: [concrete dienst of bureau]
-- Adressen of doelwitten: [waar haal je die vandaan]
-- Kosten: [ruwe indicatie in euro, all-in voor X stuks]
-- Levertijd: [aantal weken vanaf akkoord]
-- Optioneel een 6e bullet voor specifieke aandachtspunten
+- Uitvoering: [concrete Nederlandse partij, bureau of dienst]
+- Achterban: [wat vraag je van leden, en hoeveel moeite kost het ze]
+- Kosten: [ruwe indicatie in euro]
+- Doorlooptijd: [weken vanaf besluit]
+- Risico: [wat kan misgaan en hoe vang je dat op]
 
 STYLE:
 - Nederlands
 - Geen em dashes
 - Korte zinnen, scanbaar
-- Concrete Nederlandse bureaus en leveranciers met naam noemen waar mogelijk
+- Concrete Nederlandse partijen met naam noemen waar mogelijk
 - Realistische kosten- en tijdsindicaties
 - Geen vage termen als "creatief" of "impactvol"
-- Varieer in soort: visueel, juridisch, journalistiek, symbolisch, fysiek
 
-VOORBEELD (volg deze stijl exact):
+VOORBEELD (volg deze stijl, niet dit onderwerp):
 
-**Fysiek symbool naar lokale politici sturen**
+**Leden kopen samen een peiling en een paginagrote advertentie**
 
-Een opvallend object opsturen naar raadsleden, wethouders of gedeputeerden (of een gerichte selectie), geproduceerd en verzonden via een fulfillmentpartij. Het object zelf is de boodschap, met een kort kaartje erbij. Werkt omdat het op bureaus blijft liggen, gefotografeerd wordt en gesprek oproept in het stadhuis of provinciehuis.
+*Geinspireerd op:* 38 Degrees, 2011, verkoop Engelse staatsbossen
+Meer dan 500.000 mensen tekenden tegen de verkoop van de staatsbossen, en leden betaalden samen een YouGov-peiling en advertenties in landelijke kranten. Binnen vier maanden trok de regering het plan in en bood de minister excuses aan.
 
-*Toepassing publieke sector wins:*
-Stuur elk raadslid in een gemeente die wil bezuinigen op de bibliotheek een mini-bibliotheekkaart met de tekst "Verlopen op [datum bezuinigingsbesluit]" en een kaartje met 3 cijfers over het bibliotheekgebruik in hun gemeente. Of stuur wethouders Zorg een lege medicijnstrip met etiket "Recept: investeer in de wijkverpleging". Timing: week voor de raadsvergadering of begrotingsbehandeling.
+*De kern:*
+Een petitie wordt pas macht als de achterban zelf betaalt voor onafhankelijk bewijs dat de meerderheid het oneens is, en dat bewijs publiek zichtbaar maakt op het moment van besluiten.
+
+*Toepassing op publieke sector wins:*
+Kies een gemeente die wil bezuinigen op buurthuizen. Vraag tekenaars in die gemeente om 5 euro voor een peiling onder inwoners. Publiceer de uitkomst ("7 op de 10 inwoners wil de buurthuizen houden") als paginagrote advertentie in de lokale krant op de dag van de begrotingsraad, met het aantal inwoners dat hem betaalde erbij.
 
 *Hoe regel je dit:*
-- Productie: zoek "promotional fulfillment Nederland" of bel IGO Promo, Inkoopcollectief of Promidata
-- Verzending: fulfillmenthuis pakt en verstuurt 30 tot 150 pakketjes in 1 dag
-- Adressen: via gemeente- of provinciewebsite, of opvragen bij raadsgriffie
-- Kosten: ruwweg 10 tot 25 euro per pakketje all-in bij 100 stuks
-- Levertijd: 2 tot 3 weken vanaf akkoord ontwerp
+- Uitvoering: peiling via I&O Research of Ipsos I&O, advertentie via DPG Media of Mediahuis regionaal
+- Achterban: 5 euro doneren en de uitslag delen, 2 minuten
+- Kosten: 6.000 tot 12.000 euro voor peiling en advertentie, gedekt door crowdfunding
+- Doorlooptijd: 4 tot 6 weken
+- Risico: peiling valt tegen. Stel de vraag eerlijk en publiceer alleen als de uitslag de boodschap draagt; anders gebruik je hem intern.
 
 Output ALLEEN de tactiek, geen inleidende of afsluitende zinnen, geen kopjes als "Tactiek:" ervoor."""
 
@@ -87,20 +97,53 @@ def save_history(history):
     )
 
 
+CASES_FILE = REPO_DIR / "cases.json"
+RECENT_TITLES = 30
 WILDCARD_PROBABILITY = 0.33
 
 
-def build_user_prompt(history):
-    avoid_titles = [h["title"] for h in history]
+def load_cases():
+    return json.loads(CASES_FILE.read_text(encoding="utf-8"))
+
+
+def pick_case(history, cases):
+    """Kies een casus die het langst niet gebruikt is, en bij voorkeur een ander type dan de vorige."""
+    used = [h.get("case") for h in history if h.get("case")]
+    unused = [c for c in cases if c["naam"] not in used]
+    if not unused:
+        # Alles is gebruikt: begin opnieuw, maar sla de meest recente helft over.
+        recent = set(used[-len(cases) // 2:])
+        unused = [c for c in cases if c["naam"] not in recent]
+    last_case = next((c for c in cases if used and c["naam"] == used[-1]), None)
+    if last_case:
+        other_type = [c for c in unused if c["type"] != last_case["type"]]
+        unused = other_type or unused
+    return random.choice(unused)
+
+
+def format_case(case):
+    return (
+        f"Organisatie: {case['org']}\n"
+        f"Jaar: {case['jaar']}\n"
+        f"Actie: {case['naam']}\n"
+        f"Wat er gebeurde: {case['wat_er_gebeurde']}\n"
+        f"Resultaat: {case['resultaat']}\n"
+        f"Kern-tactiek: {case['kern']}"
+    )
+
+
+def build_user_prompt(history, case):
+    recent_titles = [h["title"] for h in history[-RECENT_TITLES:]]
     favorites = [h["title"] for h in history if h.get("favorite")]
     downvotes = [h["title"] for h in history if h.get("downvote")]
 
-    sections = []
+    sections = ["CASUS VAN VANDAAG (baseer de tactiek hierop):\n" + format_case(case)]
 
-    if avoid_titles:
+    if recent_titles:
         sections.append(
-            "Eerder verstuurde tactieken (vermijd letterlijke herhaling):\n- "
-            + "\n- ".join(avoid_titles)
+            "Recent verstuurde tactieken. Vermijd herhaling, en vermijd vooral het patroon "
+            "'politici krijgen iets persoonlijks opgestuurd', dat is veel te vaak gedaan:\n- "
+            + "\n- ".join(recent_titles)
         )
 
     if downvotes:
@@ -109,34 +152,26 @@ def build_user_prompt(history):
             + "\n- ".join(downvotes)
         )
 
-    if favorites:
+    wildcard_active = bool(favorites) and random.random() < WILDCARD_PROBABILITY
+    if favorites and not wildcard_active:
         sections.append(
-            "Deze tactieken landden goed (zachte inspiratie, GEEN blueprint - varieer in soort):\n- "
+            "Deze tactieken landden goed (zachte inspiratie, GEEN blueprint):\n- "
             + "\n- ".join(favorites)
         )
-
-    wildcard_active = (favorites or downvotes) and random.random() < WILDCARD_PROBABILITY
     if wildcard_active:
         sections.append(
-            "WILDCARD-MODUS: Genereer juist een tactiek die buiten de eerdere voorkeuren ligt. "
-            "Onverwacht qua soort of medium, maar wel passend bij DGZ's drie pijlers. "
-            "Negeer de favorieten als sturing, gebruik alleen de downvotes als grenzen."
-        )
-    else:
-        sections.append(
-            "Blijf vooral creatief en varieer in soort (visueel, juridisch, journalistiek, symbolisch, fysiek). "
-            "Behandel de favorieten als losse signalen, niet als kader. "
-            "De beste tactiek kan ook compleet buiten de bestaande voorkeuren liggen."
+            "WILDCARD-MODUS: vertaal de casus zo gedurfd mogelijk. Kies een doelwit of pijler "
+            "die voor de hand ligt het minst."
         )
 
-    sections.append("Genereer nu 1 nieuwe tactiek, exact in het format hierboven.")
+    sections.append("Genereer nu 1 nieuwe tactiek op basis van de casus, exact in het format hierboven.")
 
     return "\n\n".join(sections), wildcard_active
 
 
-def generate_tactic(history):
+def generate_tactic(history, case):
     client = Anthropic(api_key=ANTHROPIC_API_KEY)
-    user_prompt, wildcard_active = build_user_prompt(history)
+    user_prompt, wildcard_active = build_user_prompt(history, case)
     if wildcard_active:
         print("Wildcard-modus actief")
 
@@ -216,7 +251,8 @@ def send_to_telegram(text, tactic_id):
 
 def send_new_tactic():
     history = load_history()
-    tactic = generate_tactic(history)
+    case = pick_case(history, load_cases())
+    tactic = generate_tactic(history, case)
     tactic_id = int(datetime.now().timestamp())
     response = send_to_telegram(tactic, tactic_id)
     message_id = response.get("result", {}).get("message_id")
@@ -230,10 +266,11 @@ def send_new_tactic():
             "downvote": False,
             "notes": [],
             "telegram_message_id": message_id,
+            "case": case["naam"],
         }
     )
     save_history(history)
-    print(f"Verstuurd: {title} (id={tactic_id}, message_id={message_id})")
+    print(f"Verstuurd: {title} (casus={case['naam']}, id={tactic_id}, message_id={message_id})")
 
 
 if __name__ == "__main__":
