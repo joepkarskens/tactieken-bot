@@ -225,11 +225,12 @@ def generate_tactic(history, case):
 
     response = client.messages.create(
         model="claude-sonnet-5",
-        max_tokens=1500,
+        max_tokens=8000,
         system=SYSTEM_PROMPT,
         messages=[{"role": "user", "content": user_prompt}],
     )
-    return response.content[0].text.strip()
+    text = "".join(b.text for b in response.content if b.type == "text")
+    return text.strip()
 
 
 def extract_title(tactic_text):
