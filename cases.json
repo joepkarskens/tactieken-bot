@@ -7,7 +7,11 @@
     "resultaat": "Uit één virale e-mail ontstond MoveOn, dat in 1999 al 12 miljoen dollar aan toezeggingen voor campagnes van anti-impeachment-kandidaten had opgehaald.",
     "kern": "Geef een brede, gefrustreerde middengroep één simpele, redelijke uitweg om te tekenen en zet die handtekeningen daarna direct om in geld en electorale druk.",
     "type": "virale petitie omgezet in electorale toezeggingen",
-    "bron": "https://en.wikipedia.org/wiki/MoveOn"
+    "bron": "https://en.wikipedia.org/wiki/MoveOn",
+    "nieuws": {
+      "medium": "The Spokesman-Review",
+      "url": "https://www.spokesman.com/stories/1998/oct/30/silence-scandal-petition-tells-nethercutt/"
+    }
   },
   {
     "org": "MoveOn",
@@ -17,7 +21,11 @@
     "resultaat": "De grootste gecoördineerde bel-actie in zijn soort haalde wereldwijd het nieuws, al veranderde ze de stemmen van senatoren nauwelijks.",
     "kern": "Concentreer duizenden individuele contactmomenten op één dag en één doelwit, zodat de massa letterlijk zichtbaar en hoorbaar wordt in de kantoren van beslissers.",
     "type": "gecoördineerde telefoon-actie",
-    "bron": "https://www.washingtonpost.com/archive/politics/2003/02/27/virtual-march-floods-senate-with-calls-against-an-iraq-war/0ba70ed0-4731-46b5-9531-32b79a99133d/"
+    "bron": "https://www.washingtonpost.com/archive/politics/2003/02/27/virtual-march-floods-senate-with-calls-against-an-iraq-war/0ba70ed0-4731-46b5-9531-32b79a99133d/",
+    "nieuws": {
+      "medium": "The Washington Post",
+      "url": "https://www.washingtonpost.com/archive/politics/2003/02/27/virtual-march-floods-senate-with-calls-against-an-iraq-war/0ba70ed0-4731-46b5-9531-32b79a99133d/"
+    }
   },
   {
     "org": "MoveOn",
@@ -27,7 +35,11 @@
     "resultaat": "De weigering door CBS werd zelf het nieuws, waardoor het spotje enorm veel gratis zendtijd en online kijkers kreeg en een van de meest bekeken politieke reclames van dat jaar werd.",
     "kern": "Laat je achterban de campagne-uitingen zelf maken en kiezen, en richt je op een podium waar een weigering net zo veel oplevert als plaatsing.",
     "type": "crowdsourced advertentie",
-    "bron": "https://en.wikipedia.org/wiki/Bush_in_30_Seconds"
+    "bron": "https://en.wikipedia.org/wiki/Bush_in_30_Seconds",
+    "nieuws": {
+      "medium": "San Francisco Chronicle (SFGate)",
+      "url": "https://www.sfgate.com/politics/article/child-s-pay-ad-hits-the-airwaves-nixed-by-2806021.php"
+    }
   },
   {
     "org": "Avaaz",
@@ -37,7 +49,11 @@
     "resultaat": "Op 1 april 2010 stelde het VK het Chagos Marine Protected Area in, met 640.000 km2 destijds een van de grootste beschermde zeegebieden ter wereld.",
     "kern": "Grijp een formele inspraakprocedure en maak die met een massale, georganiseerde inbreng tot een onmiskenbaar publiek mandaat.",
     "type": "massa-inbreng in consultatie",
-    "bron": "https://en.wikipedia.org/wiki/Chagos_Marine_Protected_Area"
+    "bron": "https://en.wikipedia.org/wiki/Chagos_Marine_Protected_Area",
+    "nieuws": {
+      "medium": "CBS News",
+      "url": "https://www.cbsnews.com/amp/news/britain-creates-worlds-largest-marine-reserve/"
+    }
   },
   {
     "org": "Avaaz",
@@ -57,7 +73,11 @@
     "resultaat": "Avaaz-netwerken werden een van de belangrijkste nieuwsbronnen over het geweld van het regime toen internationale journalisten het land niet in konden, maar de operatie leidde ook tot scherpe kritiek over de grenzen van een campagneorganisatie.",
     "kern": "Zet microdonaties van een wereldwijde achterban om in directe materiële steun die mensen ter plekke zelf een stem geeft.",
     "type": "micro-donaties voor een doel",
-    "bron": "https://www.npr.org/2012/03/13/148542026/aid-groups-role-in-syria-pushes-limits"
+    "bron": "https://www.npr.org/2012/03/13/148542026/aid-groups-role-in-syria-pushes-limits",
+    "nieuws": {
+      "medium": "NPR",
+      "url": "https://www.npr.org/2012/03/13/148542026/aid-groups-role-in-syria-pushes-limits"
+    }
   },
   {
     "org": "Avaaz",
@@ -67,7 +87,11 @@
     "resultaat": "De EU beperkte in 2013 het gebruik van drie neonicotinoïden, en in 2018 volgde een volledig verbod op buitengebruik.",
     "kern": "Maak een abstract technisch besluit tastbaar met één groot, fotogeniek beeld precies op de plek en het moment waarop wordt beslist.",
     "type": "stunt bij beslismoment",
-    "bron": "https://phys.org/news/2018-04-eu-bee-killing-pesticides.html"
+    "bron": "https://phys.org/news/2018-04-eu-bee-killing-pesticides.html",
+    "nieuws": {
+      "medium": "Gulf News (AFP)",
+      "url": "https://gulfnews.com/world/oceania/eu-eyes-pesticide-ban-over-bee-scare-1.1176847"
+    }
   },
   {
     "org": "Avaaz",
@@ -77,7 +101,11 @@
     "resultaat": "Facebook haalde vlak voor de verkiezingen op ongekende schaal pagina's en netwerken offline, en Avaaz gebruikte dit om 'Correct the Record' en wetgeving tegen desinformatie te bepleiten.",
     "kern": "Doe zelf het onderzoekswerk dat een machtig platform of een overheid laat liggen en leg het bewijs op een tijdstip waarop negeren niet meer kan.",
     "type": "eigen onderzoek/onthullen",
-    "bron": "https://www.euronews.com/2019/05/22/fake-content-floods-facebook-ahead-of-eu-elections"
+    "bron": "https://www.euronews.com/2019/05/22/fake-content-floods-facebook-ahead-of-eu-elections",
+    "nieuws": {
+      "medium": "Euronews",
+      "url": "https://www.euronews.com/2019/05/22/fake-content-floods-facebook-ahead-of-eu-elections"
+    }
   },
   {
     "org": "38 Degrees",
@@ -87,7 +115,11 @@
     "resultaat": "Op 17 februari 2011 zei minister Caroline Spelman in het parlement 'we got this one wrong', stopte de consultatie en haalde de bosclausules uit de wet.",
     "kern": "Combineer een massale petitie met een zelf betaalde onafhankelijke peiling en advertenties, zodat de brede publieke steun onbetwistbaar en zichtbaar wordt.",
     "type": "crowdfunded peiling en advertentie",
-    "bron": "https://en.wikipedia.org/wiki/Hands_off_our_Forest"
+    "bron": "https://en.wikipedia.org/wiki/Hands_off_our_Forest",
+    "nieuws": {
+      "medium": "Fox News (AP)",
+      "url": "https://www.foxnews.com/world/britain-halts-forest-sell-off-plan-after-protests.amp"
+    }
   },
   {
     "org": "38 Degrees",
@@ -107,7 +139,11 @@
     "resultaat": "De coalitieregering liet het plan in 2014 vallen, en in 2016 besloot ook de volgende regering het kadaster niet te privatiseren.",
     "kern": "Mobiliseer leden om een formele consultatie te vullen met inhoudelijke bezwaren, zodat de officiële uitkomst zelf het argument tegen het plan wordt.",
     "type": "massa-inbreng in consultatie",
-    "bron": "https://commonslibrary.parliament.uk/research-briefings/cbp-7556/"
+    "bron": "https://commonslibrary.parliament.uk/research-briefings/cbp-7556/",
+    "nieuws": {
+      "medium": "Civil Service World",
+      "url": "https://www.civilserviceworld.com/professions/article/autumn-statement-land-registry-privatisation-shelved"
+    }
   },
   {
     "org": "38 Degrees",
@@ -117,7 +153,11 @@
     "resultaat": "Het onderzoek bracht plannen voor sluiting van spoedeisende hulpposten, verloskunde en ziekenhuisbedden aan het licht en maakte de plannen tot landelijk nieuws en inzet van lokale verzet.",
     "kern": "Betaal met de achterban voor onafhankelijk onderzoek naar wat een overheid stil houdt en publiceer het samen met een grote krant.",
     "type": "crowdfunded research / lekken en onthullen",
-    "bron": "https://home.38degrees.org.uk/2016/08/26/38-degrees-crowdfunded-investigation-secret-nhs-plans/"
+    "bron": "https://home.38degrees.org.uk/2016/08/26/38-degrees-crowdfunded-investigation-secret-nhs-plans/",
+    "nieuws": {
+      "medium": "Yorkshire Post",
+      "url": "https://www.pressreader.com/uk/yorkshire-post/20160827/281797103418488"
+    }
   },
   {
     "org": "38 Degrees",
@@ -127,7 +167,11 @@
     "resultaat": "De CMA concludeerde dat de deal Murdoch te veel macht over het Britse nieuws zou geven, en Murdoch kreeg Sky News niet in handen.",
     "kern": "Voed een formele toezichtsprocedure met massale, persoonlijke zienswijzen plus eigen onderzoek, zodat de toezichthouder je als belanghebbende moet horen.",
     "type": "massa-inbreng bij toezichthouder",
-    "bron": "https://home.38degrees.org.uk/2018/07/20/murdoch-we-did-it/"
+    "bron": "https://home.38degrees.org.uk/2018/07/20/murdoch-we-did-it/",
+    "nieuws": {
+      "medium": "CNN Money",
+      "url": "https://money.cnn.com/2017/10/31/media/media-matters-sky-fox"
+    }
   },
   {
     "org": "Uplift",
@@ -137,7 +181,11 @@
     "resultaat": "Nog diezelfde week verhoogde de regering het vluchtelingenquotum van 600 naar 4.000.",
     "kern": "Vraag geen handtekening maar een concreet, persoonlijk aanbod, en gebruik die optelsom als bewijs dat de samenleving meer aankan dan de politiek denkt.",
     "type": "toezeggingen als politiek bewijs",
-    "bron": "https://www.thejournal.ie/pledge-a-bed-uplift-campaign-2310752-Sep2015/"
+    "bron": "https://www.thejournal.ie/pledge-a-bed-uplift-campaign-2310752-Sep2015/",
+    "nieuws": {
+      "medium": "TheJournal.ie",
+      "url": "https://www.thejournal.ie/pledge-a-bed-uplift-campaign-2310752-Sep2015/"
+    }
   },
   {
     "org": "Uplift",
@@ -147,7 +195,11 @@
     "resultaat": "Op 29 mei 2017 maakten de Sisters of Charity bekend dat ze zich terugtrokken en geen rol in eigendom of bestuur van het nieuwe ziekenhuis zouden hebben.",
     "kern": "Adopteer een snel groeiende petitie van een lid die past bij je prioriteiten en schaal die direct op met de volle organisatiekracht.",
     "type": "ledenpetitie opgeschaald tot campagne",
-    "bron": "https://www.controlshiftlabs.com/2017/09/21/uplift-ireland-and-national-maternity-hospital.html"
+    "bron": "https://www.controlshiftlabs.com/2017/09/21/uplift-ireland-and-national-maternity-hospital.html",
+    "nieuws": {
+      "medium": "TheJournal.ie",
+      "url": "https://www.thejournal.ie/sisters-of-charity-national-maternity-hospital-3346810-Apr2017/"
+    }
   },
   {
     "org": "Uplift",
@@ -157,7 +209,11 @@
     "resultaat": "De minister greep in en Oaktree liet de opzeggingen intrekken, zodat de huurders konden blijven.",
     "kern": "Koppel een concreet, lokaal onrecht met gezichten aan een landelijke eis, zodat een minister persoonlijk moet ingrijpen.",
     "type": "lokale casus als hefboom voor landelijk beleid",
-    "bron": "https://www.irishtimes.com/business/commercial-property/landlord-in-limerick-complex-withdraws-notices-to-quit-1.2936436"
+    "bron": "https://www.irishtimes.com/business/commercial-property/landlord-in-limerick-complex-withdraws-notices-to-quit-1.2936436",
+    "nieuws": {
+      "medium": "The Irish Times",
+      "url": "https://www.irishtimes.com/business/commercial-property/landlord-in-limerick-complex-withdraws-notices-to-quit-1.2936436"
+    }
   },
   {
     "org": "Uplift",
@@ -167,7 +223,11 @@
     "resultaat": "Op 6 juli 2017 tekende president Higgins de wet die fracking in Ierland verbiedt.",
     "kern": "Zet landelijke online kracht achter een bestaand lokaal verzet en een initiatiefwet van een regeringsparlementariër, zodat een partijoverstijgende meerderheid ontstaat.",
     "type": "steun aan initiatiefwet",
-    "bron": "https://www.irishtimes.com/news/politics/oireachtas/ireland-joins-france-germany-and-bulgaria-in-banning-fracking-1.3137095"
+    "bron": "https://www.irishtimes.com/news/politics/oireachtas/ireland-joins-france-germany-and-bulgaria-in-banning-fracking-1.3137095",
+    "nieuws": {
+      "medium": "The Irish Times",
+      "url": "https://www.irishtimes.com/news/politics/oireachtas/ireland-joins-france-germany-and-bulgaria-in-banning-fracking-1.3137095"
+    }
   },
   {
     "org": "Uplift",
@@ -177,7 +237,11 @@
     "resultaat": "De staat kocht in 2024 zo'n 1.400 acres voor ongeveer de helft van de vraagprijs en nam het op in Ierlands eerste nationale park aan zee, Páirc Náisiúnta na Mara, Ciarraí.",
     "kern": "Gebruik een verkoopmoment als kans en eis niet alleen bescherming maar publieke aankoop, met een concreet toekomstbeeld erbij.",
     "type": "eis tot publieke aankoop",
-    "bron": "https://www.irishtimes.com/environment/2024/04/22/irelands-first-marine-national-park-to-incorporate-newly-acquired-conor-pass/"
+    "bron": "https://www.irishtimes.com/environment/2024/04/22/irelands-first-marine-national-park-to-incorporate-newly-acquired-conor-pass/",
+    "nieuws": {
+      "medium": "The Irish Times",
+      "url": "https://www.irishtimes.com/environment/2024/04/22/irelands-first-marine-national-park-to-incorporate-newly-acquired-conor-pass/"
+    }
   },
   {
     "org": "Campact",
@@ -187,7 +251,11 @@
     "resultaat": "Handelsverdragen werden in Duitsland een massaal politiek twistpunt; TTIP liep daarna vast en CETA kwam onder zware druk.",
     "kern": "Bundel online boosheid in een eenmalige, logistiek volledig gefaciliteerde massamobilisatie met een brede coalitie, zodat de omvang zelf het nieuws wordt.",
     "type": "massademonstratie / coalitiemobilisatie",
-    "bron": "https://www.freitag.de/autoren/asansoerpress35/berlin-250-000-machtvoll-vs-ttip-ceta"
+    "bron": "https://www.freitag.de/autoren/asansoerpress35/berlin-250-000-machtvoll-vs-ttip-ceta",
+    "nieuws": {
+      "medium": "Deutsche Wirtschafts Nachrichten",
+      "url": "https://deutsche-wirtschafts-nachrichten.de/2015/10/11/250-000-teilnehmer-bei-demonstration-gegen-ttip-in-berlin"
+    }
   },
   {
     "org": "Campact",
@@ -197,7 +265,11 @@
     "resultaat": "Het Bundesverfassungsgericht stelde in oktober 2016 voorwaarden aan de voorlopige toepassing van CETA: het arbitragesysteem mocht niet voorlopig in werking treden en CETA-comités moesten democratisch aan parlementen gekoppeld worden.",
     "kern": "Maak van een juridische procedure een massa-actie door gewone leden als mede-eiser te laten tekenen, zodat de rechtszaak zowel juridisch als publicitair gewicht krijgt.",
     "type": "juridisch (massaclaim)",
-    "bron": "https://www.heise.de/newsticker/meldung/125-000-unterstuetzen-Verfassungsbeschwerde-gegen-Ceta-3310409.html"
+    "bron": "https://www.heise.de/newsticker/meldung/125-000-unterstuetzen-Verfassungsbeschwerde-gegen-Ceta-3310409.html",
+    "nieuws": {
+      "medium": "heise online",
+      "url": "https://www.heise.de/newsticker/meldung/125-000-unterstuetzen-Verfassungsbeschwerde-gegen-Ceta-3310409.html"
+    }
   },
   {
     "org": "Campact",
@@ -207,7 +279,11 @@
     "resultaat": "Samenwerking met de AfD werd het centrale verkiezingsthema en Merz moest zich publiekelijk opnieuw aan de Brandmauer committeren.",
     "kern": "Spring binnen 72 uur op een politiek breukmoment met een kant-en-klare infrastructuur (geld, podia, lokale organisatoren) voor massaprotest, zodat de verontwaardiging zichtbaar wordt voordat het nieuws verschuift.",
     "type": "stunt bij beslismoment / rapid response massaprotest",
-    "bron": "https://www.campact.de/presse/mitteilung/20250202-pm-aufstand-der-anstaendigen/"
+    "bron": "https://www.campact.de/presse/mitteilung/20250202-pm-aufstand-der-anstaendigen/",
+    "nieuws": {
+      "medium": "Tagesspiegel",
+      "url": "https://www.tagesspiegel.de/berlin/rechts-abbiegen-verboten-160000-menschen-protestieren-bei-brandmauer-demo-in-berlin-gegen-cdu-kurs-13120366.html"
+    }
   },
   {
     "org": "Campact",
@@ -217,7 +293,11 @@
     "resultaat": "Het fonds overtrof het AfD-verkiezingsbudget; bij de verkiezing van september 2026 werd de AfD wel de grootste (43,8 procent) maar bleef zij drie zetels onder de absolute meerderheid, met SPD en Groenen beide in het parlement.",
     "kern": "Framen van een inzamelactie als directe wedstrijd tegen het budget van de tegenstander, en het geld deels doorgeven aan lokale groepen die al op de grond actief zijn.",
     "type": "micro-donaties voor een doel / strategisch stemadvies",
-    "bron": "https://www.campact.de/presse/mitteilung/20260710-pm-fonds-erfolg/"
+    "bron": "https://www.campact.de/presse/mitteilung/20260710-pm-fonds-erfolg/",
+    "nieuws": {
+      "medium": "NZZ",
+      "url": "https://www.nzz.ch/deutschland/politik/drei-millionen-euro-gegen-die-afd-die-ngo-campact-mischt-im-wahlkampf-in-sachsen-anhalt-mit-ld.10020270"
+    }
   },
   {
     "org": "Campax",
@@ -227,7 +307,11 @@
     "resultaat": "Op 7 maart 2021 verwierp 64,4 procent van de kiezers de wet, waarna een nieuwe staatsgerichte E-ID werd ontwikkeld.",
     "kern": "Gebruik een direct-democratisch instrument om een technisch klinkende wet te herframen als principekwestie (privatisering van het paspoort) en win zo de stemming.",
     "type": "referendum / volksstemming",
-    "bron": "https://www.srf.ch/news/elektronische-identitaet/eidgenoessische-abstimmung-das-e-id-gesetz-wird-deutlich-abgelehnt"
+    "bron": "https://www.srf.ch/news/elektronische-identitaet/eidgenoessische-abstimmung-das-e-id-gesetz-wird-deutlich-abgelehnt",
+    "nieuws": {
+      "medium": "SRF",
+      "url": "https://www.srf.ch/news/elektronische-identitaet/eidgenoessische-abstimmung-das-e-id-gesetz-wird-deutlich-abgelehnt"
+    }
   },
   {
     "org": "Campax",
@@ -237,7 +321,11 @@
     "resultaat": "De Nationale Raad stemde in met verlaging van de btw op menstruatieproducten naar het lage tarief.",
     "kern": "Plaats een groot, visueel onmiskenbaar beeld pal voor de deur van beslissers op precies de dag van de stemming.",
     "type": "stunt bij beslismoment",
-    "bron": "https://campax.org/de/tamponsteuer/"
+    "bron": "https://campax.org/de/tamponsteuer/",
+    "nieuws": {
+      "medium": "Nau.ch",
+      "url": "https://www.nau.ch/politik/bundeshaus/nationalrat-senkt-mehrwertsteuer-auf-produkte-der-monatshygiene-66174783"
+    }
   },
   {
     "org": "Campax",
@@ -247,7 +335,11 @@
     "resultaat": "Beide Kamers verhoogden de bijdrage tegen de Bondsraad in naar 15 miljoen frank.",
     "kern": "Geef een snel opkomende publieke ergernis een bekend gezicht als afzender en richt de druk op het parlement dat de regering kan overrulen.",
     "type": "rapid response petitie / parlement tegen regering",
-    "bron": "https://www.nzz.ch/schweiz/nun-ist-es-fix-das-parlament-spricht-15-millionen-franken-fuer-die-frauen-em-und-korrigiert-damit-den-bundesrat-ld.1861474"
+    "bron": "https://www.nzz.ch/schweiz/nun-ist-es-fix-das-parlament-spricht-15-millionen-franken-fuer-die-frauen-em-und-korrigiert-damit-den-bundesrat-ld.1861474",
+    "nieuws": {
+      "medium": "watson",
+      "url": "https://www.watson.ch/sport/frauenfussball/468268935-frauenfussball-em-2025-bundesrat-soll-mehr-geld-geben-statt-zu-kuerzen"
+    }
   },
   {
     "org": "Campax",
@@ -257,7 +349,11 @@
     "resultaat": "Uiteindelijk werden 287.164 handtekeningen ingediend, een Zwitsers record voor snelheid.",
     "kern": "Maak van handtekeningen verzamelen een zichtbare race tegen de klok met een extreem kort tijdsdoel, zodat de snelheid zelf het politieke signaal wordt.",
     "type": "volksinitiatief / snelheidsrecord",
-    "bron": "https://www.publiceye.ch/de/mediencorner/medienmitteilungen/detail/freiwillige-sammeln-183661-unterschriften-in-14-tagen"
+    "bron": "https://www.publiceye.ch/de/mediencorner/medienmitteilungen/detail/freiwillige-sammeln-183661-unterschriften-in-14-tagen",
+    "nieuws": {
+      "medium": "watson",
+      "url": "https://www.watson.ch/schweiz/wirtschaft/710615822-konzernverantwortungsinitiative-schafft-rekord-bei-unterschriften-sammlung"
+    }
   },
   {
     "org": "WeMove Europe",
@@ -267,7 +363,11 @@
     "resultaat": "Het snelste succesvolle EBI tot dan toe dwong een formeel antwoord van de Commissie af en leidde tot een EU-hervorming van de transparantie van risicobeoordeling bij voedselveiligheid.",
     "kern": "Gebruik een formeel EU-instrument dat de Commissie verplicht te reageren, en zet er een bestaande coalitie en gedeeld budget achter zodat de drempel in recordtijd gehaald wordt.",
     "type": "Europees burgerinitiatief",
-    "bron": "https://citizens-initiative-forum.europa.eu/citizens-experiences/blogs/how-stop-glyphosate-brought-about-small-revolution_en"
+    "bron": "https://citizens-initiative-forum.europa.eu/citizens-experiences/blogs/how-stop-glyphosate-brought-about-small-revolution_en",
+    "nieuws": {
+      "medium": "EUobserver",
+      "url": "https://euobserver.com/science/139951"
+    }
   },
   {
     "org": "WeMove Europe",
@@ -277,7 +377,11 @@
     "resultaat": "Het Oceaanactieplan van de Commissie (2023) vroeg lidstaten bodemtrawlen uit te faseren in Natura 2000-zeegebieden per 2024 en in alle beschermde zeegebieden per 2030.",
     "kern": "Koop gericht media-aandacht in het ene medium dat de beslissers zelf lezen, en combineer dat met een persoonlijk, humoristisch cadeau aan de verantwoordelijke commissaris.",
     "type": "crowdfunded advertentie / stunt bij beslismoment",
-    "bron": "https://our.fish/news/video-more-than-150000-europeans-call-on-eu-to-ban-bottom-trawling-to-protect-ocean-and-climate/"
+    "bron": "https://our.fish/news/video-more-than-150000-europeans-call-on-eu-to-ban-bottom-trawling-to-protect-ocean-and-climate/",
+    "nieuws": {
+      "medium": "Fishing News",
+      "url": "https://fishingnews.co.uk/news/over-150000-europeans-call-for-eu-bottom-trawling-ban/"
+    }
   },
   {
     "org": "WeMove Europe",
@@ -307,7 +411,11 @@
     "resultaat": "Het High Court verklaarde de wet ongeldig, waardoor ruim 100.000 Australiërs alsnog mochten stemmen, en online inschrijving werd mogelijk.",
     "kern": "Zet strategische rechtszaken in vlak voor een verkiezing om een regel die de eigen doelgroep uitsluit direct onderuit te halen.",
     "type": "juridisch",
-    "bron": "https://www.hrlc.org.au/updates/strengthening-democracy-hrlrc-and-getup-case-restores-right-to-vote-to-over-100000-australians/"
+    "bron": "https://www.hrlc.org.au/updates/strengthening-democracy-hrlrc-and-getup-case-restores-right-to-vote-to-over-100000-australians/",
+    "nieuws": {
+      "medium": "ABC News",
+      "url": "https://www.abc.net.au/news/2010-08-06/high-court-upholds-getup-case/934934"
+    }
   },
   {
     "org": "GetUp!",
@@ -317,7 +425,11 @@
     "resultaat": "Premier Palaszczuk beloofde haar veto uit te spreken over de lening en deed dat ook, waardoor de publieke financiering voor de mijn wegviel.",
     "kern": "Maak één concreet overheidsbesluit (een lening, subsidie of vergunning) tot stemverklarend thema in een lopende verkiezing, zodat partijen zich er vóór de stembus over moeten uitspreken.",
     "type": "verkiezingsdruk op één besluit / micro-donaties",
-    "bron": "https://www.abc.net.au/news/2017-11-04/premier-annastacia-palaszczuk-veto-qld-government-adani-brisbane/9117594?future=true"
+    "bron": "https://www.abc.net.au/news/2017-11-04/premier-annastacia-palaszczuk-veto-qld-government-adani-brisbane/9117594?future=true",
+    "nieuws": {
+      "medium": "ABC News",
+      "url": "https://www.abc.net.au/news/2017-11-04/premier-annastacia-palaszczuk-veto-qld-government-adani-brisbane/9117594?future=true"
+    }
   },
   {
     "org": "Leadnow",
@@ -327,7 +439,11 @@
     "resultaat": "De 'prijs' haalde de landelijke media en hield de aandacht voor woekerwinsten van supermarkten vast.",
     "kern": "Parodieer een prijsuitreiking om een abstract probleem (woekerwinsten) te personaliseren en er een terugkerend, deelbaar mediamoment van te maken.",
     "type": "satirische publieksverkiezing / naming and shaming",
-    "bron": "https://www.blogto.com/eat_drink/2024/12/canadian-grocery-galen-weston-jr-award/"
+    "bron": "https://www.blogto.com/eat_drink/2024/12/canadian-grocery-galen-weston-jr-award/",
+    "nieuws": {
+      "medium": "Daily Hive",
+      "url": "https://dailyhive.com/canada/galen-weston-jr-shortlisted-profiteer-year"
+    }
   },
   {
     "org": "Leadnow",
@@ -347,7 +463,11 @@
     "resultaat": "Uiteindelijk tekenden circa 180 merken het Accord, met verplichte fabrieksinspecties en afdwingbare afspraken.",
     "kern": "Richt massale verontwaardiging na een ramp op de grootste speler, zodat die als eerste omgaat en de rest van de sector moet volgen.",
     "type": "druk op marktleider / dominocampagne bedrijven",
-    "bron": "https://www.wbs.ac.uk/news/rana-plaza-accord-a-template-for-global-worker-rights/"
+    "bron": "https://www.wbs.ac.uk/news/rana-plaza-accord-a-template-for-global-worker-rights/",
+    "nieuws": {
+      "medium": "NBC News",
+      "url": "https://www.nbcnews.com/business/business-news/h-m-approves-safety-standards-bangladesh-factories-flna1C9904706"
+    }
   },
   {
     "org": "SumOfUs/Ekō",
@@ -357,7 +477,11 @@
     "resultaat": "De steun steeg van 5 procent in 2015 naar 23 procent in 2016, genoeg om het onderwerp jaarlijks op de agenda te houden.",
     "kern": "Gebruik aandelen in handen van leden om formeel toegang tot de jaarvergadering en de stembus van beleggers te krijgen, en bouw de steun van jaar tot jaar op.",
     "type": "aandeelhoudersactivisme",
-    "bron": "https://www.sumofus.org/media/23-of-amazon-shareholders-back-call-for-assessment-of-worker-abuses-human-rights-violations-in-operation-and-supply-chains/"
+    "bron": "https://www.sumofus.org/media/23-of-amazon-shareholders-back-call-for-assessment-of-worker-abuses-human-rights-violations-in-operation-and-supply-chains/",
+    "nieuws": {
+      "medium": "The Stranger",
+      "url": "https://www.thestranger.com/slog/2016/05/17/24093312/for-the-second-year-in-a-row-amazon-shareholders-vote-down-a-proposal-to-analyze-human-rights-risks"
+    }
   },
   {
     "org": "SumOfUs/Ekō",
@@ -367,7 +491,11 @@
     "resultaat": "55,5 procent van de aandeelhouders weigerde het bestuur decharge te verlenen, een historische motie van wantrouwen na 97 procent steun een jaar eerder.",
     "kern": "Breng een getroffene persoonlijk tegenover de topbestuurder op het moment dat beleggers al twijfelen, zodat de menselijke schade de financiële onvrede versterkt.",
     "type": "aandeelhoudersactivisme / getuige bij beslismoment",
-    "bron": "https://www.france24.com/en/20190427-bayer-shareholders-vote-against-board-over-monsanto-merger"
+    "bron": "https://www.france24.com/en/20190427-bayer-shareholders-vote-against-board-over-monsanto-merger",
+    "nieuws": {
+      "medium": "France 24",
+      "url": "https://www.france24.com/en/20190427-bayer-shareholders-vote-against-board-over-monsanto-merger"
+    }
   },
   {
     "org": "SumOfUs/Ekō",
@@ -377,6 +505,10 @@
     "resultaat": "The Guardian en tientallen andere media brachten het onderzoek, wat Meta's falende moderatie bij verkiezingen wereldwijd aantoonde.",
     "kern": "Bewijs dat een bedrijf zijn eigen regels niet handhaaft door het systeem zelf gecontroleerd te testen, en lever het resultaat exclusief aan een grote krant.",
     "type": "lekken/onthullen (undercover test)",
-    "bron": "https://amp.scroll.in/latest/1068131/meta-approved-ads-inciting-violence-against-muslims-during-lok-sabha-polls-reports-the-guardian"
+    "bron": "https://amp.scroll.in/latest/1068131/meta-approved-ads-inciting-violence-against-muslims-during-lok-sabha-polls-reports-the-guardian",
+    "nieuws": {
+      "medium": "Engadget",
+      "url": "https://www.engadget.com/meta-approved-ads-in-india-that-called-for-violence-and-spread-election-conspiracy-theories-225510165.html"
+    }
   }
 ]
