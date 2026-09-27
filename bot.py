@@ -180,6 +180,16 @@ def format_case(case):
     )
 
 
+def format_source(case):
+    """Link naar een nieuwsartikel over de casus, uit cases.json (niet door het model verzonnen)."""
+    news = case.get("nieuws")
+    if news:
+        return f"\n\n*Nieuwsartikel over de casus:* {news['medium']}, {news['url']}"
+    if case.get("bron"):
+        return f"\n\n*Bron van de casus:* {case['bron']}"
+    return ""
+
+
 def build_user_prompt(history, case):
     recent_titles = [h["title"] for h in history[-RECENT_TITLES:]]
     favorites = [h["title"] for h in history if h.get("favorite")]
@@ -301,7 +311,7 @@ def send_to_telegram(text, tactic_id):
 def send_new_tactic():
     history = load_history()
     case = pick_case(history, load_cases())
-    tactic = generate_tactic(history, case)
+    tactic = generate_tactic(history, case) + format_source(case)
     tactic_id = int(datetime.now().timestamp())
     response = send_to_telegram(tactic, tactic_id)
     message_id = response.get("result", {}).get("message_id")
