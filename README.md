@@ -12,6 +12,7 @@ Telegram-bot die elke dag om 12:30 (Nederlandse tijd) een nieuwe campagnetactiek
 - Favoriet en Niet geschikt zijn wederzijds uitsluitend: één van beide markeren maakt de andere automatisch ongedaan.
 - **Notitie toevoegen:** beantwoord het bot-bericht met een tekst-reply. De tekst wordt opgeslagen in `notes` van die tactiek-entry.
 - Eerder verstuurde tactieken staan in `history.json`, zodat de bot zichzelf niet herhaalt.
+- Elke tactiek is gebaseerd op een echte, gedurfde actie van een digital first organisatie (MoveOn, Avaaz, 38 Degrees, Campact, Campax, Uplift, WeMove, GetUp!, Leadnow, SumOfUs/Ekō). Die casussen staan in `cases.json`. De bot kiest elke dag de casus die het langst niet gebruikt is, haalt de kern-tactiek eruit en vertaalt die naar Nederland.
 
 ## Hoe favorieten en downvotes het model sturen
 
@@ -85,7 +86,8 @@ Body:
 
 - `bot.py` - genereert tactiek en stuurt naar Telegram
 - `poll.py` - polt elke 5 min op `Volgende tactiek`-button
-- `history.json` - lijst van eerder verstuurde tactieken
+- `cases.json` - bibliotheek met echte campagnes waar de tactieken op gebaseerd zijn (uitbreiden mag: zelfde velden, met bron)
+- `history.json` - lijst van eerder verstuurde tactieken (met de gebruikte casus in `case`)
 - `offset.txt` - Telegram update_id bookmark voor de poller
 - `.github/workflows/daily-tactic.yml` - draait via cron-job.org of handmatig
 - `.github/workflows/poll-volgende.yml` - draait elke 5 min via schedule
