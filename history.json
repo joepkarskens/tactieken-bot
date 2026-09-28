@@ -803,5 +803,15 @@
     "notes": [],
     "telegram_message_id": 99,
     "case": "Pledge a Bed"
+  },
+  {
+    "id": 1790591232,
+    "date": "2026-09-28",
+    "title": "Peiling en advertentie tegen de bankenwallet voor je digitale paspoort",
+    "favorite": false,
+    "downvote": false,
+    "notes": [],
+    "telegram_message_id": 100,
+    "case": "Referendum tegen de private E-ID"
   }
 ]
