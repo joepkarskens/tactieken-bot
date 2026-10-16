@@ -13,6 +13,7 @@ Telegram-bot die elke dag om 12:30 (Nederlandse tijd) een nieuwe campagnetactiek
 - **Notitie toevoegen:** beantwoord het bot-bericht met een tekst-reply. De tekst wordt opgeslagen in `notes` van die tactiek-entry.
 - Eerder verstuurde tactieken staan in `history.json`, zodat de bot zichzelf niet herhaalt.
 - Elke tactiek is gebaseerd op een echte, gedurfde actie van een digital first organisatie (MoveOn, Avaaz, 38 Degrees, Campact, Campax, Uplift, WeMove, GetUp!, Leadnow, SumOfUs/Ekō). Die casussen staan in `cases.json`. De bot kiest elke dag de casus die het langst niet gebruikt is, haalt de kern-tactiek eruit en vertaalt die naar Nederland.
+- Daarna toetst een tweede AI-stap (de beoordelaar) de tactiek op Nederlandse feitenfouten, de juiste beslisser en de regels. Vindt die echte fouten, dan wordt de tactiek één keer herschreven voordat hij naar Telegram gaat. Wat de beoordelaar vond staat in het log van de GitHub Action.
 
 ## Hoe favorieten en downvotes het model sturen
 

@@ -227,20 +227,80 @@ def build_user_prompt(history, case):
     return "\n\n".join(sections), wildcard_active
 
 
+MODEL = "claude-sonnet-5"
+
+CRITIC_PROMPT = """Je bent een strenge beoordelaar van campagnetactieken voor DeGoedeZaak, met veel kennis van Nederlandse politiek, bestuur en recht. Lof is niet nuttig.
+
+Hieronder staan de instructies die de schrijver van de tactiek kreeg. Toets de tactiek daaraan, en vooral aan de Nederlandse werkelijkheid:
+- Klopt wie er beslist (college of raad, Gedeputeerde of Provinciale Staten, minister, toezichthouder, bedrijf)?
+- Bestaat elke genoemde formele procedure echt en werkt die zoals beschreven?
+- Kloppen feiten over Nederlandse organisaties, wetten, verkiezingen en data?
+- Is er een concrete beslisser die door deze actie echt kan bewegen, en een concreet beslismoment?
+- Houdt de tactiek zich aan de regels (partij-onafhankelijk, veiligheid van politici, geen advertenties bij Meta of Google, niets opsturen naar politici)?
+Kleine stijlpunten tellen niet. Alleen fouten die een campagneleider op het verkeerde been zetten.
+
+Antwoord ALLEEN met JSON, zonder uitleg eromheen:
+{"ok": true} als er geen echte fouten zijn, anders
+{"ok": false, "problemen": ["korte beschrijving van fout 1", "..."]}
+
+INSTRUCTIES VAN DE SCHRIJVER:
+""" + SYSTEM_PROMPT
+
+
+def ask_model(client, system, messages):
+    response = client.messages.create(
+        model=MODEL,
+        max_tokens=8000,
+        system=system,
+        messages=messages,
+    )
+    return "".join(b.text for b in response.content if b.type == "text").strip()
+
+
+def review_tactic(client, tactic):
+    """Laat een tweede AI-stap de tactiek toetsen. Geeft een lijst met problemen terug (leeg = in orde)."""
+    answer = ask_model(client, CRITIC_PROMPT, [{"role": "user", "content": "TACTIEK:\n\n" + tactic}])
+    match = re.search(r"\{.*\}", answer, flags=re.DOTALL)
+    verdict = json.loads(match.group(0))
+    if verdict.get("ok"):
+        return []
+    return [str(p) for p in verdict.get("problemen", [])]
+
+
 def generate_tactic(history, case):
     client = Anthropic(api_key=ANTHROPIC_API_KEY)
     user_prompt, wildcard_active = build_user_prompt(history, case)
     if wildcard_active:
         print("Wildcard-modus actief")
 
-    response = client.messages.create(
-        model="claude-sonnet-5",
-        max_tokens=8000,
-        system=SYSTEM_PROMPT,
-        messages=[{"role": "user", "content": user_prompt}],
+    messages = [{"role": "user", "content": user_prompt}]
+    tactic = ask_model(client, SYSTEM_PROMPT, messages)
+
+    # Beoordelaar: bij echte fouten wordt de tactiek een keer herschreven.
+    # Als de beoordeling zelf misgaat, sturen we de eerste versie gewoon door.
+    try:
+        problems = review_tactic(client, tactic)
+    except Exception as e:
+        print(f"Beoordeling mislukt, eerste versie wordt verstuurd: {e}", file=sys.stderr)
+        return tactic
+    if not problems:
+        print("Beoordelaar: in orde")
+        return tactic
+
+    print("Beoordelaar vond problemen:\n- " + "\n- ".join(problems))
+    feedback = (
+        "Een strenge beoordelaar vond deze fouten in je tactiek:\n- "
+        + "\n- ".join(problems)
+        + "\n\nHerschrijf de tactiek zodat deze fouten weg zijn. Kies een andere hefboom of route als dat nodig is. "
+        "Zelfde casus, exact hetzelfde format. Output ALLEEN de tactiek."
     )
-    text = "".join(b.text for b in response.content if b.type == "text")
-    return text.strip()
+    messages += [{"role": "assistant", "content": tactic}, {"role": "user", "content": feedback}]
+    try:
+        revised = ask_model(client, SYSTEM_PROMPT, messages)
+    except Exception as e:
+        print(f"Herschrijven mislukt, eerste versie wordt verstuurd: {e}", file=sys.stderr)
+        return tactic
+    return revised or tactic
 
 
 def extract_title(tactic_text):
