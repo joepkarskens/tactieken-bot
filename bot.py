@@ -190,6 +190,20 @@ def format_source(case):
     return ""
 
 
+LESSON_RUNS = 10
+MAX_LESSONS = 15
+
+
+def recent_lessons(history):
+    """Fouten die de beoordelaar vond in de laatste runs, nieuwste eerst, zonder dubbelingen."""
+    lessons = []
+    for entry in reversed(history[-LESSON_RUNS:]):
+        for lesson in entry.get("beoordelaar") or []:
+            if lesson not in lessons:
+                lessons.append(lesson)
+    return lessons[:MAX_LESSONS]
+
+
 def build_user_prompt(history, case):
     recent_titles = [h["title"] for h in history[-RECENT_TITLES:]]
     favorites = [h["title"] for h in history if h.get("favorite")]
@@ -202,6 +216,13 @@ def build_user_prompt(history, case):
             "Recent verstuurde tactieken. Vermijd herhaling, en vermijd vooral het patroon "
             "'politici krijgen iets persoonlijks opgestuurd', dat is veel te vaak gedaan:\n- "
             + "\n- ".join(recent_titles)
+        )
+
+    lessons = recent_lessons(history)
+    if lessons:
+        sections.append(
+            "LESSEN UIT EERDERE RUNS. Een beoordelaar vond deze fouten in recente tactieken. "
+            "Maak ze niet opnieuw:\n- " + "\n- ".join(lessons)
         )
 
     if downvotes:
@@ -282,10 +303,10 @@ def generate_tactic(history, case):
         problems = review_tactic(client, tactic)
     except Exception as e:
         print(f"Beoordeling mislukt, eerste versie wordt verstuurd: {e}", file=sys.stderr)
-        return tactic
+        return tactic, []
     if not problems:
         print("Beoordelaar: in orde")
-        return tactic
+        return tactic, []
 
     print("Beoordelaar vond problemen:\n- " + "\n- ".join(problems))
     feedback = (
@@ -299,8 +320,8 @@ def generate_tactic(history, case):
         revised = ask_model(client, SYSTEM_PROMPT, messages)
     except Exception as e:
         print(f"Herschrijven mislukt, eerste versie wordt verstuurd: {e}", file=sys.stderr)
-        return tactic
-    return revised or tactic
+        return tactic, problems
+    return (revised or tactic), problems
 
 
 def extract_title(tactic_text):
@@ -371,7 +392,8 @@ def send_to_telegram(text, tactic_id):
 def send_new_tactic():
     history = load_history()
     case = pick_case(history, load_cases())
-    tactic = generate_tactic(history, case) + format_source(case)
+    tactic, problems = generate_tactic(history, case)
+    tactic += format_source(case)
     tactic_id = int(datetime.now().timestamp())
     response = send_to_telegram(tactic, tactic_id)
     message_id = response.get("result", {}).get("message_id")
@@ -386,6 +408,7 @@ def send_new_tactic():
             "notes": [],
             "telegram_message_id": message_id,
             "case": case["naam"],
+            "beoordelaar": problems,
         }
     )
     save_history(history)

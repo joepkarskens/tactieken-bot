@@ -932,6 +932,10 @@
     "downvote": false,
     "notes": [],
     "telegram_message_id": 112,
-    "case": "Nieuwe Konzernverantwortungsinitiative in recordtijd"
+    "case": "Nieuwe Konzernverantwortungsinitiative in recordtijd",
+    "beoordelaar": [
+      "Interne inconsistentie over wie beslist: de tactiek zegt dat het college besluit over de sluiting, maar richt de druk op coalitiepartijen in de raad op het moment van een raadsvergadering. Benoem expliciet of de raad stemt (begroting, motie) of het college beslist.",
+      "Sluiting van jeugdzorgvoorzieningen wordt doorgaans regionaal ingekocht door samenwerkende gemeenten of besloten door de zorgaanbieder zelf, niet door de lokale gemeenteraad."
+    ]
   }
 ]
