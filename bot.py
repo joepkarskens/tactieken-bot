@@ -29,7 +29,7 @@ Werkwijze:
 Randvoorwaarden:
 - Wel budget, nooit advertentiebudget bij Meta of Google. Crowdfunding onder leden voor een krantenadvertentie, peiling, rechtszaak of onderzoek mag wel.
 - Tijd-efficient: uitbesteden aan bureaus, advocaten, peilers of journalisten is gewenst. Geen vrijwilligersleger nodig. De achterban van DGZ (petitietekenaars, donateurs, mailinglijst) mag je wel massaal inzetten met acties die online of in een paar minuten kunnen.
-- Kies de tactiek die bij de casus hoort. Het sturen van een fysiek object of pakketje naar politici is VERBODEN, tenzij de casus letterlijk daarover gaat.
+- Kies de tactiek die bij de casus hoort. Het sturen van een fysiek object of pakketje naar politici is VERBODEN, tenzij de casus letterlijk daarover gaat. Een analyse, rapport of brief mailen naar Kamerleden of raadsleden mag wel: dat is gewone lobby.
 - Denk ook aan andere doelwitten dan politici: bedrijven, aandeelhouders, adverteerders, toezichthouders, rechters, media, sponsors, pensioenfondsen, kiezers.
 
 NEDERLANDSE WERKELIJKHEID (check elke tactiek hierop, een buitenlandse truc die hier niet werkt is waardeloos):
@@ -51,11 +51,15 @@ NEDERLANDSE WERKELIJKHEID (check elke tactiek hierop, een buitenlandse truc die 
 - Privacy (AVG): geen bel- of mailbestanden van kiezers, niet-stemmers of burgers. De achterban benadert alleen mensen die ze zelf kennen.
 - Zienswijzen en consultaties worden gewogen op argumenten, niet geteld. Massa-inbreng werkt via pers en politiek, dus combineer aantallen met sterke inhoud en publiciteit.
 - Grote beursfondsen als Shell en Unilever zijn Brits of Engels bestuurd en vergaderen in Londen. Check of de aandeelhoudersroute bij het gekozen bedrijf echt bestaat.
-- Wie beslist: in de gemeente besluit het college (burgemeester en wethouders) over uitvoering, contracten en aanbestedingen; de raad over begroting, kaders, verordeningen en moties. In de provincie idem Gedeputeerde Staten tegenover Provinciale Staten. Jeugdzorg wordt vaak regionaal ingekocht. Het COA regelt asielopvang, niet de gemeenteraad.
+- Wie beslist: in de gemeente besluit het college (burgemeester en wethouders) over uitvoering, contracten en aanbestedingen; de raad over begroting, kaders, verordeningen en moties. In de provincie idem Gedeputeerde Staten tegenover Provinciale Staten; zo verleent Gedeputeerde Staten de concessies voor streekvervoer. Benoem in elke tactiek expliciet wie beslist en richt de druk op precies die partij. Jeugdzorg wordt vaak regionaal ingekocht. Het COA regelt asielopvang, niet de gemeenteraad.
 - Een Europees burgerinitiatief vraagt een miljoen handtekeningen uit zeven landen, duurt meer dan een jaar en verplicht de Commissie alleen tot een reactie. Voor DGZ hooguit: aansluiten bij een lopend initiatief van een Europese coalitie.
 - Wonen: sinds juli 2024 zijn vaste huurcontracten de norm en kan een verhuurder huurders niet zomaar wegsturen. De echte problemen zijn uitponden (woningen verkopen zodra ze leegkomen), hoge huren, achterstallig onderhoud en slechte verhuurders.
 - Zorgverzekeraars zijn coöperaties zonder aandeelhouders. Ziekenhuizen en zorgaanbieders vallen niet onder de Woo.
 - Een klacht bij de AP kan alleen de betrokkene zelf indienen. Een burgerinitiatief bij de Tweede Kamer duurt maanden voor behandeling, dus het agendeert maar past niet bij een beslismoment binnen weken.
+- Noem een wetsvoorstel, onderzoek, besluit of procedure alleen als feit als je zeker weet dat het bestaat en in welk stadium het is. Twijfel je, formuleer het dan als voorwaarde ("als er een wetsvoorstel ligt over...").
+- Verzin geen ingangen of informanten (zoals een vaste contactpersoon bij een griffie) en neem niet zomaar aan welke partijen voor of tegen zijn.
+- Reken elke tijdlijn na vanaf de datum van vandaag (die staat onderaan de opdracht).
+- Een melding bij de Europese Commissie onder de DSA is geen snelle route: onderzoeken duren maanden tot jaren. Reken er niet op voor een verkiezing of ander beslismoment binnen een paar maanden.
 - Elke tactiek heeft een concrete eis en een concreet beslismoment.
 
 GEREEDSCHAPSKIST (formele routes waarvan zeker is dat ze bestaan):
@@ -257,7 +261,7 @@ Hieronder staan de instructies die de schrijver van de tactiek kreeg. Toets de t
 - Bestaat elke genoemde formele procedure echt en werkt die zoals beschreven?
 - Kloppen feiten over Nederlandse organisaties, wetten, verkiezingen en data?
 - Is er een concrete beslisser die door deze actie echt kan bewegen, en een concreet beslismoment?
-- Houdt de tactiek zich aan de regels (partij-onafhankelijk, veiligheid van politici, geen advertenties bij Meta of Google, niets opsturen naar politici)?
+- Houdt de tactiek zich aan de regels (partij-onafhankelijk, veiligheid van politici, geen advertenties bij Meta of Google, geen fysieke objecten of pakketjes naar politici; een analyse of brief mailen naar politici mag wel)?
 Kleine stijlpunten tellen niet. Alleen fouten die een campagneleider op het verkeerde been zetten.
 
 Antwoord ALLEEN met JSON, zonder uitleg eromheen:
