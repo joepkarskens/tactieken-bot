@@ -1131,5 +1131,20 @@
     "telegram_message_id": 127,
     "case": "'Stand up Ursula': billboards tegen buigen voor Musk en Big Tech",
     "beoordelaar": []
+  },
+  {
+    "id": 1794569323,
+    "date": "2026-11-13",
+    "title": "Het geheime ziekenhuisdossier: onderzoek naar sluiting van acute zorg",
+    "favorite": false,
+    "downvote": false,
+    "notes": [],
+    "telegram_message_id": 128,
+    "case": "Crowdfunded onderzoek naar geheime NHS-plannen",
+    "beoordelaar": [
+      "De tactiek noemt als hefboom de NZa en de zorgverzekeraar, maar de daadwerkelijke beslissing om een SEH of verloskunde-afdeling te sluiten ligt bij het ziekenhuisbestuur zelf. NZa is toezichthouder die achteraf/vooraf toetst aan de bereikbaarheidsnorm, en zorgverzekeraars hebben zorgplicht maar beslissen niet zelf over sluiting. De werkelijke beslisser (ziekenhuisbestuur) wordt niet benoemd, waardoor de druk op het verkeerde adres kan landen.",
+      "Het 'jaarlijkse contracteerbesluit' van zorgverzekeraars is geen vastomlijnd, publiek bekend beslismoment specifiek gekoppeld aan SEH-sluitingen; dit conflateert de reguliere contractering van zorgaanbieders met het aparte, formele traject rond sluiting van acute zorgvoorzieningen (dat via de AMvB acute zorg en NZa-continuïteitsbeoordeling loopt), waardoor het beslismoment vaag en niet concreet verifieerbaar is.",
+      "Investico werkt doorgaans samen met landelijke media (Trouw, De Groene Amsterdammer, Nieuwsuur, VPRO), niet specifiek met regionale kranten van DPG Media of Mediahuis; de claim dat zij 'vaker met regionale kranten samenwerken' is niet onderbouwd en kan de uitvoering op het verkeerde bureau richten."
+    ]
   }
 ]
